@@ -1,0 +1,246 @@
+<!DOCTYPE html> <!-- Write your comments here -->
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <!-- favicon, imm logo scheda pagina -->
+</head>
+<body style="background-color:powderblue;">
+
+<h1> Tables </h1>
+
+
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+<style>
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+</style>
+  <tr> <!-- crei la linea Table Row -->
+    <th>Company</th> <!-- crei il Table Header -->
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td> <!-- crei il Table data -->
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<br>
+
+<!--
+Tag	      Description
+<table>	Defines a table
+<th>	      Defines a header cell in a table
+<tr>	      Defines a row in a table
+<td>	      Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	      Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+-->
+
+<h1> Images </h1>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture> <!-- The HTML <picture> element gives web developers more flexibility in specifying image resources.
+The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. 
+This way the browser can choose the image that best fits the current view and/or device.
+Each <source> element has a media attribute that defines when the image is the most suitable. -->
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style> <!-- imm bckgrnd alla pagina intera -->
+
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style> <!-- immagine in bckgrnd al parag -->
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script> <!-- +JS -->  <br>
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<img src="workplace.jpg" alt="Workplace" USEMAP="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map> <br>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p> <br> 
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p> <br> 
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a> <br> 
+
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"> <br> 
+
+<img src="PUSH.jpg" alt="immagine"> <br>
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"> <br>
+
+<h1> Links </h1>
+
+<a href="https://www.w3schools.com/html/html_links.asp"> link normale </a> <br>
+<a href="https://www.w3schools.com/html/html_links.asp" target="_self" title="self"> link self </a> <br>
+<a href="https://www.w3schools.com/html/html_links.asp" target="_blank" title="blank"> link blank </a> <br> 
+<a href="https://www.w3schools.com/html/html_links.asp" target="_parent" title="parent"> link parent </a> <br>
+<a href="https://www.w3schools.com/html/html_links.asp" target="_top" title="top"> link top </a> <br>
+
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a><br>
+
+<a href="mailto:someone@example.com">Send email</a> <br>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button> <br>
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> <br>
+
+<h1> Colors </h1>
+
+<h1 style="border:2px solid Tomato;">Hello World</h1> <br>
+<h2 style="border:2px solid DodgerBlue;">Hello World</h2> <br>
+<h3 style="border:2px solid Violet;">Hello World</h3> <br>
+
+<h1> Quotations </h1>
+
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+<h1> Formatting </h1>
+
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<h1>This is heading 1</h1>
+<p>This is a paragraph with <br> a line break.</p>
+<hr>
+
+<h2>This is heading 2</h2>
+<p title="I'm a tooltip">This is a paragraph.</p>
+<br>
+<h3>This is heading 3</h3>
+<p title='John "ShotGun" Nelson'> 
+'John "ShotGun" Nelson'</p>
+
+<h4>This is heading 4</h4>
+<p title="John 'ShotGun' Nelson"> 
+"John 'ShotGun' Nelson" </p>
+
+<h5>This is heading 5</h5>
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+<h6>This is heading 6</h6>
+
+<h1 style="background-color:blue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+<a href="https://www.w3schools.com">This is a link</a>
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+<p> 
+<b>Letizia</b> 
+<small>e</small> 
+<strong>Milo</strong> 
+<i>sono</i> 
+<del>felici</del> 
+<sup>se</sup> 
+<sub>stanno</sub> 
+<em>molto</em> 
+<ins>tempo</ins> 
+<mark>a letto</mark>
+</p>
+
+</body>
+</html>
